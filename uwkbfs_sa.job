@@ -1,0 +1,77 @@
+#!/bin/bash
+# use the bash shell
+#SBATCH --output=uwkbfs_sa.out
+set -x
+# eacho each command to standard out before running it
+module load gcc
+./undirected_weighted_kBFS 2 inputs/rMatw_1000
+./undirected_weighted_kBFS 4 inputs/rMatw_1000
+./undirected_weighted_kBFS 8 inputs/rMatw_1000
+./undirected_weighted_kBFS 16 inputs/rMatw_1000
+./undirected_weighted_kBFS 32 inputs/rMatw_1000
+./undirected_weighted_kBFS 64 inputs/rMatw_1000
+
+./undirected_weighted_kBFS 2 inputs/rMatw_10000
+./undirected_weighted_kBFS 4 inputs/rMatw_10000
+./undirected_weighted_kBFS 8 inputs/rMatw_10000
+./undirected_weighted_kBFS 16 inputs/rMatw_10000
+./undirected_weighted_kBFS 32 inputs/rMatw_10000
+./undirected_weighted_kBFS 64 inputs/rMatw_10000
+
+./undirected_weighted_kBFS 2 inputs/rMatw_100000
+./undirected_weighted_kBFS 4 inputs/rMatw_100000
+./undirected_weighted_kBFS 8 inputs/rMatw_100000
+./undirected_weighted_kBFS 16 inputs/rMatw_100000
+./undirected_weighted_kBFS 32 inputs/rMatw_100000
+./undirected_weighted_kBFS 64 inputs/rMatw_100000
+
+./undirected_weighted_kBFS 2 inputs/rMatw_1000000
+./undirected_weighted_kBFS 4 inputs/rMatw_1000000
+./undirected_weighted_kBFS 8 inputs/rMatw_1000000
+./undirected_weighted_kBFS 16 inputs/rMatw_1000000
+./undirected_weighted_kBFS 32 inputs/rMatw_1000000
+./undirected_weighted_kBFS 64 inputs/rMatw_1000000
+# ./undirected_weighted_kBFS 128 inputs/rMatw_1000000
+
+./undirected_weighted_kBFS 2 inputs/rMatw_10000000
+./undirected_weighted_kBFS 4 inputs/rMatw_10000000
+./undirected_weighted_kBFS 8 inputs/rMatw_10000000
+./undirected_weighted_kBFS 16 inputs/rMatw_10000000
+./undirected_weighted_kBFS 32 inputs/rMatw_10000000
+./undirected_weighted_kBFS 64 inputs/rMatw_10000000
+
+./undirected_weighted_kBFS 2 inputs/rMatw_4000
+./undirected_weighted_kBFS 4 inputs/rMatw_4000
+./undirected_weighted_kBFS 8 inputs/rMatw_4000
+./undirected_weighted_kBFS 16 inputs/rMatw_4000
+./undirected_weighted_kBFS 32 inputs/rMatw_4000
+./undirected_weighted_kBFS 64 inputs/rMatw_4000
+
+./undirected_weighted_kBFS 2 inputs/rMatw_40000
+./undirected_weighted_kBFS 4 inputs/rMatw_40000
+./undirected_weighted_kBFS 8 inputs/rMatw_40000
+./undirected_weighted_kBFS 16 inputs/rMatw_40000
+./undirected_weighted_kBFS 32 inputs/rMatw_40000
+./undirected_weighted_kBFS 64 inputs/rMatw_40000
+
+./undirected_weighted_kBFS 2 inputs/rMatw_400000
+./undirected_weighted_kBFS 4 inputs/rMatw_400000
+./undirected_weighted_kBFS 8 inputs/rMatw_400000
+./undirected_weighted_kBFS 16 inputs/rMatw_400000
+./undirected_weighted_kBFS 32 inputs/rMatw_400000
+./undirected_weighted_kBFS 64 inputs/rMatw_400000
+
+./undirected_weighted_kBFS 2 inputs/rMatw_4000000
+./undirected_weighted_kBFS 4 inputs/rMatw_4000000
+./undirected_weighted_kBFS 8 inputs/rMatw_4000000
+./undirected_weighted_kBFS 16 inputs/rMatw_4000000
+./undirected_weighted_kBFS 32 inputs/rMatw_4000000
+./undirected_weighted_kBFS 64 inputs/rMatw_4000000
+# ./undirected_weighted_kBFS 128 inputs/rMatw_4000000
+
+./undirected_weighted_kBFS 2 inputs/rMatw_40000000
+./undirected_weighted_kBFS 4 inputs/rMatw_40000000
+./undirected_weighted_kBFS 8 inputs/rMatw_40000000
+./undirected_weighted_kBFS 16 inputs/rMatw_40000000
+./undirected_weighted_kBFS 32 inputs/rMatw_40000000
+./undirected_weighted_kBFS 64 inputs/rMatw_40000000

@@ -1,0 +1,8 @@
+#!/bin/bash
+# use the bash shell
+#SBATCH --output=uwkbfs_analysis.out
+set -x
+# eacho each command to standard out before running it
+module load gcc
+./undirected_weighted_kBFS_analysis filenames.txt
+# run the code
